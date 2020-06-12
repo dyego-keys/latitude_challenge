@@ -12,7 +12,7 @@ public class MaxProfit {
 	
 	public static long getMaxProfit(int[] stockPrices) {
 		
-		if (stockPrices.length < 2) {
+		if (stockPrices == null || stockPrices.length < 2) {
 			throw new IllegalArgumentException("Not enough stock prices");
 		}
 		

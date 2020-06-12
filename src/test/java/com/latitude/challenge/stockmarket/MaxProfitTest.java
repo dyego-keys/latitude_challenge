@@ -16,17 +16,10 @@ public class MaxProfitTest {
 		int stockPrices[] = {10, 7, 5, 8, 11, 9};	
 		assertEquals("Array with min before max value: ", 6, MaxProfit.getMaxProfit(stockPrices));
 	}
- 
-	@Test
-	public void testArrayWithoutUsingMaxValue() {
-		
-		int stockPrices[] = {11, 22, 15, 8, 20, 3};	
-		assertEquals("Array without using max value: ", 12, MaxProfit.getMaxProfit(stockPrices));
-	}
 	
 	@Test
 	public void testArrayWithoutUsingMinValue() {
-		int stockPrices[] = {10, 30, 5, 8, 20, 3};
+		int stockPrices[] = {10, 30, 11, 12, 13, 14};
 		assertEquals("Array without using min value: ", 20, MaxProfit.getMaxProfit(stockPrices));
 	}
 	
@@ -38,7 +31,7 @@ public class MaxProfitTest {
 	
 	@Test
 	public void testArrayDecendingValues() {
-		int stockPrices[] = {10, 8, 7, 3};
+		int stockPrices[] = {10, 8, 7, 3, 2 , 1};
 		assertEquals("Array decending values: ", 0, MaxProfit.getMaxProfit(stockPrices));
 	}
 	

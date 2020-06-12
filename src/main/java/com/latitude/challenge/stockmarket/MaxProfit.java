@@ -3,9 +3,12 @@ package com.latitude.challenge.stockmarket;
 /**
  * @author Diego
  * 
+ * Latitude Challenge Solution
+ * Complexity: O(N)
+ * 
  */
 
-public class MaxBuyAndSellProfit {
+public class MaxProfit {
 	
 	public static long getMaxProfit(int[] stockPrices) {
 		
@@ -34,8 +37,11 @@ public class MaxBuyAndSellProfit {
 		}
 		
 		// buy at = max - maxDiff
+		//System.out.println("buy: "+ (max-maxDiff));
 		// sell at = max
+		//System.out.println("sell: "+max);
 
 		return (max - (max - maxDiff));
 	}
+	
 }
